@@ -175,14 +175,8 @@
     }
     .hero-photo-img {
       width: 100%; height: 240px;
-      background: var(--gray-100);
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
-      gap: 0.6rem; color: var(--gray-400);
-    }
-    .hero-photo-img span {
-      font-size: 0.68rem; letter-spacing: 0.12em;
-      text-transform: uppercase; color: var(--gray-400);
+      object-fit: cover; object-position: center top;
+      display: block;
     }
     .hero-photo-footer {
       padding: 0.75rem 0.9rem;
@@ -616,13 +610,7 @@
           <div class="photo-top-dot"></div>
           <span class="photo-top-label">Physician ID</span>
         </div>
-        <div class="hero-photo-img">
-          <svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="8" r="4"/>
-            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
-          </svg>
-          <span>Your Photo Here</span>
-        </div>
+        <img src="images/photo.jpg" alt="Dr. Aditya Kanteti" class="hero-photo-img" />
         <div class="hero-photo-footer">
           <div class="photo-reg">
             Reg. No. · MCI / NMC
